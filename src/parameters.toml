@@ -2498,6 +2498,26 @@ value = 1
 type = "integer"
 description = "Number of edmf updrafts."
 
+[horizontal_wind_relaxation_timescale]
+value = 21600.0
+type = "float"
+description = "Horizontal wind relaxation timescale toward forcing profile in SCM (in seconds). Parameter described in 2.2.3 of Shen et al. 2022 [https://doi.org/10.1029/2021MS002631]."
+
+[scalar_relaxation_timescale]
+value = 86400.0
+type = "float"
+description = "Scalar relaxation timescale used to relax temperature and humidities toward forcing profile in SCM (in seconds). Parameter described in 2.2.3 Eq 11 of Shen et al. 2022 [https://doi.org/10.1029/2021MS002631]."
+
+[forcing_relaxation_minimum_height]
+value = 3000.0
+type = "float"
+description = "Starting height for relaxation towards forcing profile in SCM (in meters). Parameter described in 2.2.3 Eq 11 of Shen et al. 2022 [https://doi.org/10.1029/2021MS002631]."
+
+[forcing_relaxation_maximum_height]
+value = 3500.0
+type = "float"
+description = "Height for relaxation towards forcing profile in SCM at which the relaxation timescale coefficient becomes 1 (in meters). Parameter described in 2.2.3 Eq 11 of Shen et al. 2022 [https://doi.org/10.1029/2021MS002631]."
+
 [microphysics_model_precipitation_fraction]
 value = "prescribed"
 type = "string"

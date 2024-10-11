@@ -1,6 +1,11 @@
 ClimaParams.jl Release Notes
 ========================
 
+v0.10.15
+------
+ - Adds 2 timescale parameters for relaxing forced single column model temperature, humidity, and wind velocity towards the forcing profile ([#209](https://github.com/CliMA/ClimaParams.jl/pull/209))
+ - Adds 2 parameters that describe the height at which the single column model profiles should be relaxed at ([#209](https://github.com/CliMA/ClimaParams.jl/pull/209))
+
 v0.10.14
 ------
 - Remove all dependencies ([#208](https://github.com/CliMA/ClimaParams.jl/pull/208))
